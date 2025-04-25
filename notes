@@ -1,0 +1,15 @@
+# Install Requirements
+
+python -m venv venv
+source venv/bin/activate
+pip install fastapi uvicorn openai langchain streamlit
+
+
+# Start FastAPI
+uvicorn app.main:app --reload
+
+# Open another terminal & run Streamlit
+streamlit run streamlit_ui/ui.py
+
+OpenAI API keys page
+https://platform.openai.com/api-keys

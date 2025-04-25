@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# VSCode settings
+.vscode/
+
+# macOS-specific files
+.DS_Store
+
+# Python egg info
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/config.toml
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# FastAPI auto-generated docs
+docs/
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Local Streamlit state
+.streamlit/
+
+# Misc
+*.sqlite3
+.env

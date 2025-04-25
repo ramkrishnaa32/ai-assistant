@@ -1,0 +1,36 @@
+# Core Web Frameworks
+fastapi
+uvicorn[standard]
+streamlit
+
+# Data & Utilities
+pandas
+sqlparse
+jinja2
+
+# LLM / OpenAI APIs (adjust as needed)
+openai
+anthropic
+mistralai
+requests
+
+# For optional local embeddings / model experimentation
+transformers
+torch
+sentence-transformers
+
+# For structured API models
+pydantic
+
+# Environment & Dev tools
+python-dotenv
+
+# Optional if running in notebooks too
+ipython
+
+
+langchain
+llama-index
+dotenv
+json
+transformers

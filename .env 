@@ -1,1 +1,3 @@
-git remote add origin https://github.com/ramkrishnaa32/ai-assistant.git
+OPENAI_API_KEY=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
+OPENAI_PROJECT_ID=proj_OM6RDg2qjXSOV2SnG3aiCX6r
+OPENAI_ORG_ID=org-kIXSuk9NH3eKkkCNipsd2NYQ

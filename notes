@@ -2,7 +2,7 @@
 
 python -m venv venv
 source venv/bin/activate
-pip install fastapi uvicorn openai langchain streamlit
+pip install fastapi uvicorn openai langchain streamlit dotenv
 
 
 # Start FastAPI

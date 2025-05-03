@@ -1,11 +1,14 @@
-# In app/routes/auto_doc.py
-from fastapi import APIRouter, Body
+from fastapi import APIRouter
+from pydantic import BaseModel
 from app.services.llm_service import generate_docs
 
 router = APIRouter()
 
+# Define expected request body
+class CodeInput(BaseModel):
+    code: str
+
 @router.post("/")
-async def auto_doc(code: str = Body(...)):
-    # Call the function to generate documentation from code
-    generated_doc = generate_docs(code)
+async def auto_doc(input: CodeInput):
+    generated_doc = generate_docs(input.code)
     return {"documentation": generated_doc}

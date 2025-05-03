@@ -1,11 +1,13 @@
-# In app/routes/sql_assistant.py
-from fastapi import APIRouter, Body
+from pydantic import BaseModel
+from fastapi import APIRouter
 from app.services.llm_service import generate_sql
 
 router = APIRouter()
 
+class SQLRequest(BaseModel):
+    prompt: str
+
 @router.post("/")
-async def sql_assistant(prompt: str = Body(...)):
-    # Call the function to generate SQL from prompt
-    generated_sql = generate_sql(prompt)
-    return {"sql": generated_sql}
+async def sql_assistant(request: SQLRequest):
+    result = generate_sql(request.prompt)
+    return {"sql": result}
